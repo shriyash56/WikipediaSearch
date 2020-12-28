@@ -1,7 +1,7 @@
 # **WikipediaSearch**
 
--Developed a single page application for search wikipedia
--Added search functionality using search API
--Implemented debounce in javascript to improve application’s performance
+•Developed a single page application for search wikipedia<br />
+•Added search functionality using search API<br />
+•Implemented debounce in javascript to improve application’s performance
 
-## Link:-  https://shriyash56.github.io/WikipediaSearch/
+## [Click](https://shriyash56.github.io/WikipediaSearch/ "Wilkipedia Search")
