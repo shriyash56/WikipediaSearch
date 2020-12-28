@@ -1,0 +1,217 @@
+
+
+body{
+  background: #2f3640;
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/* Heading */
+
+.searchBox {
+    position: absolute;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+
+.Wrap
+{
+height: 100vh;
+width: 88vw;
+border-radius: 117px;
+background: #14e1ae;
+
+box-shadow:  20px 20px 20px  #10b98f, 
+             -20px -20px 20px #18ffcd;
+margin: 50px;
+}
+
+
+#list{
+  position: absolute;
+  list-style: none;
+  left: 38%;
+  top: 40%;
+}
+
+
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	color:#2f3640;
+	font-size:2em;
+}
+a:hover{
+	color:#d73444;
+}
+a:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+
+a:after{
+  bottom:-0.25em;
+}
+a:after{
+  height:5px;
+  width:0;
+  background:#d73444;
+}
+a:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+}
+a:hover:after{
+  width:100%;
+}
+
+
+/*Emoji*/
+
+.emoji__wrap {
+	height: 120px;
+	width: 120px;
+	background: #ffcc4d;
+	border-radius: 50%;
+	position: relative;
+  margin: 0 auto;
+}
+.emoji{
+	padding: 50px;
+  text-align: center;
+}
+.emoji_eye1{
+	 left: 29px;
+}
+.emoji_eye1, .emoji_eye2 {
+   height: 25px;
+    width: 16px;
+    background: #664500;
+    border-radius: 50%;
+    position: absolute;
+    top: 34px;
+}
+.emoji_eye2{
+	 right: 29px;
+}
+
+.emoji__smile{
+    border-right: none;
+    border-left: none;
+    border-top: 9px solid #664500;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    height: 20px;
+    width: 45px;
+    margin: 0px auto 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    transition: 0.3s linear all;
+}
+.emoji__wrap:hover .emoji__smile{
+	border-bottom: 9px solid #664500;
+	transition: 0.3s linear all;
+	border-top: 0;
+	bottom: 25px;
+
+}
+.eyes:after{
+	position: absolute;
+    height:0px;
+    width: 0px;
+    background: #ffffff;
+    content: "";
+    border-radius: 50%;
+    bottom: 0px;
+    left: 2px;
+    transition: 0.3s linear all;
+
+}
+
+.emoji__wrap:hover .eyes:after {
+   
+    height: 13px;
+    width: 10px;
+    transition: 0.3s linear all;
+}
+
+.emoji__tough {
+    height: 0px;
+    width: 20px;
+    background: #c30d0d;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: 0.3s linear all;
+    top: 90px;
+}
+.emoji__wrap:hover .emoji__tough{
+	 height: 25px;
+	transition: 0.3s linear all;
+
+}
